@@ -29,20 +29,6 @@ const bot = new App({
   signingSecret: SLACK_SIGNING_SECRET
 });
 
-/**Bad practice !!! **/
-
-/* async function initProjectsAndAssess() {
-
-  let result1 = await getAllProjects();
-
-  let result2 = await getAllAssessments();
-
-  allProjects = result1.projects;
-  
-  allAssessments = result2.assessments;
-
-} */ 
-
 async function getAllProjects() {
   return await projectAPI.getProjects();
 }
